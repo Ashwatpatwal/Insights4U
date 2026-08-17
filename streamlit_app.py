@@ -18,13 +18,8 @@ if uploaded_file:
         df = pd.read_csv(uploaded_file)
     else:
         df = pd.read_excel(uploaded_file)
-
     if 'Date' in df.columns:
-        df['Date'] = pd.to_datetime(
-            df['Date'],
-            format="%d-%m-%Y",
-            errors='coerce'
-        ).dt.date
+        df['Date'] = pd.to_datetime(df['Date'], errors='coerce', dayfirst=True).dt.date
 
         df.dropna(subset=['Date'], inplace=True)
 
