@@ -4,9 +4,9 @@ import pandas as pd
 import datetime
 import plotly.express as px
 
-st.set_page_config(page_title="InsightIQ Dashboard", layout="wide")
+st.set_page_config(page_title="Insights4U Dashboard", layout="wide")
 
-st.title("InsightIQ Dashboard")
+st.title("Insight4U Dashboard")
 st.markdown("Upload your sales file (CSV), click 'Preprocess', and get an interactive dashboard automatically!")
 
 uploaded_file = st.file_uploader("Upload your file (CSV or Excel)", type=['csv', 'xlsx'])
