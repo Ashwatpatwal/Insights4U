@@ -4,7 +4,7 @@ Built with Streamlit | Fully Deployed
 
 An interactive end-to-end data analytics dashboard. This dashboard helps analyze marketing campaigns, keywords, product sales, and inventory metrics with intelligent recommendations and real-time visualizations.
 
-🔗 Live Demo: 
+🔗 Live Demo: https://insights4u.streamlit.app/ 
 
 ## **Features**
 
