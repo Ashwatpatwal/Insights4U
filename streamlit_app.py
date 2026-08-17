@@ -22,6 +22,8 @@ if uploaded_file:
 
     if 'Date' in df.columns:
         df['Date'] = pd.to_datetime(df['Date'], format="%d-%m-%Y", errors='coerce').dt.date
+        print("first min"+df['Date'])
+
         df.dropna(subset=['Date'], inplace=True)
 
     st.subheader("Raw File Preview")
@@ -43,7 +45,7 @@ if st.session_state.processed_df is not None:
 
     with st.sidebar:
         st.header("Filter Options")
-
+        print("second min"+df['Date'])
         min_date = min(df['Date'])
         max_date = max(df['Date'])
 
